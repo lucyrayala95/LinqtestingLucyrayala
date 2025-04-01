@@ -1,0 +1,79 @@
+
+
+Exploratory Testing Session: Linq Onboarding Page
+
+Objective: To uncover potential usability issues, bugs, and areas for improvement in the onboarding process.
+
+Tester: Lakshmi Prasanna kumar rayala
+
+Environment: Simulated based on the screenshot (Chrome browser on Windows, assumed to be a desktop environment).
+
+Areas of Focus:
+
+Content Clarity and Relevance: Is the information presented understandable and helpful?
+Navigation and Flow: Is the onboarding process intuitive?
+Visual Design and Layout: Is the page visually appealing and easy to use?
+Functionality: Do the interactive elements work as expected?
+Testing Notes:
+
+"Hi, Lucy" Greeting:
+
+Observation: The page greets the user by name, suggesting personalization.
+Question: Is the name dynamically populated based on the user's login?
+Test Idea: Try logging in with a different user account to verify the name changes.
+Potential Issue: If the name is hardcoded, it would be a bug.
+"Take Control" Section:
+
+Observation: This section outlines a series of steps with a progress bar (20% complete).
+Question: What are the specific steps involved? Are they clearly defined?
+Test Idea: Attempt to interact with the steps (e.g., clicking on them) to see if they are interactive or lead to further information.
+Potential Issue: The steps may be unclear or the progress bar may not update correctly.
+"How will your team use Linq primarily?" Section:
+
+Observation: This section presents five options for selecting the primary use of Linq.
+Question: Are the options mutually exclusive or can multiple be selected?
+Test Idea: Try selecting different options and observing the behavior.
+Potential Issue: The selection mechanism may be unclear or not function correctly.
+LinqOne Welcome Image:
+
+Observation: A large image with the LinqOne logo and two people is displayed.
+Question: Is the image relevant to the onboarding process? Does it convey any meaningful information?
+Test Idea: Consider the accessibility of this image for users with visual impairments (e.g., is there alt text?).
+Potential Issue: The image may be distracting or not contribute to the onboarding experience.
+"Live Training" Button:
+
+Observation: A button labeled "Live Training" is visible in the top right corner.
+Question: Where does this button lead? What kind of training is offered?
+Test Idea: Click the button (if possible) to see where it redirects.
+Potential Issue: The button may not be functional or may lead to an irrelevant page.
+Lucy Rayala (User Profile):
+
+Observation: Lucy Rayala's profile is displayed with an "Admin" badge.
+Question: Is the admin status relevant to the onboarding process?
+Test Idea: Consider how the onboarding experience might differ for users with different roles (e.g., non-admin users).
+Potential Issue: The admin badge may be unnecessary or confusing for new users.
+Navigation Menu:
+
+Observation: The left-hand navigation menu includes various options like "Dashboard," "Phone," "Organization," etc.
+Question: Are these options relevant to the onboarding process?
+Test Idea: Explore the different navigation options to understand their purpose and relevance.
+Potential Issue: The menu may be overwhelming or distracting during onboarding.
+Overall Flow:
+
+Observation: The page seems to guide the user through a series of steps.
+Question: Is the flow logical and intuitive? Are there any missing steps?
+Test Idea: Imagine being a first-time user and try to complete the onboarding process.
+Potential Issue: The flow may be confusing or inefficient.
+Potential Bugs and Issues (Based on Initial Observation):
+
+Unclear step descriptions in the "Take Control" section.
+Ambiguous selection mechanism in the "How will your team use Linq primarily?" section.
+Irrelevant or distracting welcome image.
+Potentially non-functional "Live Training" button.
+Overwhelming navigation menu during onboarding.
+Further Testing:
+
+Interact with the page elements to gather more information.
+Test the page on different browsers and devices.
+Consider the onboarding experience for users with different technical abilities.
+Document any bugs or issues found.

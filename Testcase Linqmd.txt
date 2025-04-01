@@ -1,0 +1,96 @@
+
+
+Test Cases for Adding a Contact 
+
+Test Case 1: Basic Contact Creation (Successful Path)
+
+Test ID: TC_Contact_001
+Test Title: Create a new contact with valid details.
+Preconditions:
+User is logged into the Linq application.
+User is on the "Contacts" page.
+No existing contact with the name "Sriram" (or the name you intend to use).
+Test Steps:
+Navigate to the "Contacts" section (if not already there).
+Locate and click the "Add Contact" or similar button (not clearly visible in the screenshot, but assumed to exist).
+Enter "Sriram" (or any valid name) in the "Name" field.
+(If applicable) Enter other relevant contact details like phone number, email, etc.
+Click the "Save" or "Create Contact" button.
+Expected Result:
+The contact "Sriram" is created and appears in the contact list.
+The contact details page for "Sriram" is displayed,
+A success message "Successfully created contact!" is displayed
+
+Pass/Fail: Pass if all expected results are met, otherwise Fail.
+Test Case 2: Contact Creation with Missing Name
+
+Test ID: TC_Contact_002
+Test Title: Attempt to create a contact without entering a name.
+Preconditions:
+User is logged into the Linq application.
+User is on the "Contacts" page.
+Test Steps:
+Navigate to the "Contacts" section.
+Click the "Add Contact" button.
+Leave the "Name" field blank.
+(If applicable) Enter other contact details.
+Click the "Save" or "Create Contact" button.
+Expected Result:
+An error message is displayed indicating that the "Name" field is required.
+The contact is not created.
+The user is not redirected to the contact details page.
+Pass/Fail: Pass if the error message is displayed and the contact is not created, otherwise Fail.
+Test Case 3: Contact Creation with Duplicate Name
+
+Test ID: TC_Contact_003
+Test Title: Attempt to create a contact with a name that already exists.
+Preconditions:
+User is logged into the Linq application.
+User is on the "Contacts" page.
+A contact with the name "Sriram" already exists.
+Test Steps:
+Navigate to the "Contacts" section.
+Click the "Add Contact" button.
+Enter "Sriram" in the "Name" field.
+(If applicable) Enter other contact details.
+Click the "Save" or "Create Contact" button.
+Expected Result:
+An error message is displayed indicating that a contact with that name already exists.
+The contact is not created.
+The user is not redirected to the contact details page.
+Pass/Fail: Pass if the error message is displayed and the contact is not created, otherwise Fail.
+Test Case 4: Contact Creation with Special Characters in Name
+
+Test ID: TC_Contact_004
+Test Title: Create a contact with special characters in the name.
+Preconditions:
+User is logged into the Linq application.
+User is on the "Contacts" page.
+Test Steps:
+Navigate to the "Contacts" section.
+Click the "Add Contact" button.
+Enter a name with special characters (e.g., "Sriram@123", "Sriram#$", etc.) in the "Name" field.
+(If applicable) Enter other contact details.
+Click the "Save" or "Create Contact" button.
+Expected Result:
+The contact is created successfully (or an appropriate error message is displayed based on the application's validation rules).
+If created, the special characters are displayed correctly in the contact's name.
+Pass/Fail: Pass if the contact is created or an appropriate error message is shown, otherwise Fail.
+Test Case 5: Contact Creation with Long Name
+
+Test ID: TC_Contact_005
+Test Title: Create a contact with a very long name.
+Preconditions:
+User is logged into the Linq application.
+User is on the "Contacts" page.
+Test Steps:
+Navigate to the "Contacts" section.
+Click the "Add Contact" button.
+Enter a very long name (e.g., exceeding the expected character limit) in the "Name" field.
+(If applicable) Enter other contact details.
+Click the "Save" or "Create Contact" button.
+Expected Result:
+The contact is created with the name truncated (if the application allows it) or an error message is displayed indicating that the name is too long.
+The application handles the long name according to its defined rules.
+Pass/Fail: Pass if the long name is handled correctly, otherwise Fail.
+
